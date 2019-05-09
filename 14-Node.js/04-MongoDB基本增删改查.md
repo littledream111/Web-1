@@ -39,10 +39,21 @@ MongoDB是以键值对的形式保存数据的。
 MongoDB的启动指令：（E:\MongoDB\data 自己存放数据库的位置）
 
 ```js
-.\mongod.exe --dbpath E:\MongoDB\data
+1，mongodb 默认使用执行 mongod 命令所处盘符根目录下 /data/db 
+作为自己的数据存储目录.
+
+ 所以在第一次执行之前先手动新建一个 /data/db 目录
+# 命令：mongod --回车
+
+/*--------------------------------------------------------*/
+2，如果想要修改数据存储路径
+# 命令：.\mongod.exe --dbpath E:\MongoDB\data
 
 // 然后运行 
 mongo.exe 就可以执行mongoDB的指令了。
+
+停止服务快捷键：ctrl + c
+
 ```
 
 
